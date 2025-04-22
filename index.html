@@ -1,12 +1,341 @@
-<!DOCTYPE html>
-<html lang="en">
+ 
+ <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plug-and-Play Versatile Compressed Video Enhancement</title>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Plug-and-Play Versatile Compressed Video Enhancement">
+  <meta name="keywords" content="Plug-and-Play Versatile Compressed Video Enhancement">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plug-and-Play Versatile Compressed Video Enhancement</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./static/css/bootstrap-4.4.1.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  
+  
+  
+  
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/72.png">
+
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/app.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
+
+  <link rel="stylesheet" href="./static/css/dics.original.css">
+  <script src="./static/js/event_handler.js"></script>
+  <script src="./static/js/dics.original.js"></script>
+ 
+
 </head>
 <body>
-    <h1>Welcome to PnP-VCVE</h1>
-    <p>This is the official webpage for PnP-VCVE, we will furnish this page soon.</p>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+        
+          <h2 class="title is-2 publication-title" style="margin-top: 0; margin-bottom: 0">Plug-and-Play Versatile Compressed Video Enhancement</h2>
+          <br>
+          <h2 class="title is-4" style="margin-top: 0; margin-bottom: 0">CVPR 2025</h2>
+          <br>
+          <div class="is-size-5 publication-authors">    
+            <span class="author-block">
+                <a href="https://zeldam1.github.io/">Huimin Zeng</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://ddlee-cn.github.io/">Jiacheng Li</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://staff.ustc.edu.cn/~zwxiong/">Zhiwei Xiong</a>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+           
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup></sup>University of Science and Technology of China</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+           <!-- Code Link. -->
+           <span class="link-block">
+            <a href=""
+               class="external-link button is-normal is-rounded is-dark disabled">
+              <span class="icon">
+                  <i class="fab fa-dribbble"></i>
+              </span>
+              <span>Video</span>
+              </a>
+          </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ZeldaM1/PnP-VCVE"
+                   class="external-link button is-normal is-rounded is-dark disabled">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+             
+  
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+      
+            <img src="./assets/teaser_v7.png" class="center" width="70%">
+          <h2 class="subtitle has-text-centered" style="margin-top: 15px">
+            TL;DR: We present a codec-aware framework for versatile compressed video enhancement, which adaptively enhances input videos of different compression levels and supports a wide range of downstream vision tasks.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top: -30px">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+As a widely adopted technique in data transmission, video compression effectively reduces the size of files, making it possible for real-time cloud computing.  However, it comes at the cost of visual quality, posing challenges to the robustness of downstream vision models.  In this work, we present a versatile codec-aware enhancement framework that reuses codec information to adaptively enhance videos under different compression settings, assisting various downstream vision tasks without introducing computation bottleneck.  Specifically, the proposed codec-aware framework consists of a compression-aware adaptation (CAA) network that employs a hierarchical adaptation mechanism to estimate parameters of the frame-wise enhancement network, namely the bitstream-aware enhancement  (BAE) network. The BAE network further leverages temporal and spatial priors embedded in the bitstream to effectively improve the quality of compressed input frames.  Extensive experimental results demonstrate the superior quality enhancement performance of our framework over existing enhancement methods, as well as its versatility in assisting multiple downstream tasks on compressed videos as a plug-and-play module. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+  <!-- Method. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-full-width">
+      <h2 class="title is-3" style="margin-top: -20px">Motivation</h2>
+      <!-- <img src="./assets/frame_crf.png" class="left" width="52%">
+      <img src="./assets/mv_par.png" class="left" width="40%"> -->
+      <img src="./assets/preliminaryv2.png" class="left" width="90%">
+      <div class="content has-text-justified">
+        <p style="margin-top: 10px">
+            We observe that standard video codecs (e.g., H.264) provide <b>rich codec information such as Constant Rate Factor (CRF), motion vectors, and partition maps</b>. CRF reflects hierarchical quality adjustment at both the sequence and frame levels, allowing our model to dynamically adjust parameters for inputs of different compression levels. Partition maps indicate spatial complexity, enabling region-aware refinement, while motion vectors provide temporal alignment cues with minimal overhead. By leveraging the codec information,  the enhancement framework is able to flexibly enhance videos across compression levels, support downstream tasks, and maintain computational efficiency.
+        </p>
+      </div>
+
+    </div>
+  </div>
+ 
+    <!-- Method. -->
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+            <br>
+          <h2 class="title is-3" style="margin-top: -20px">Framework</h2>
+    
+          <img src="./assets/overview.png" class="center">
+          <div class="content has-text-justified">
+            <p style="margin-top: 10px">
+                    As shown above, the proposed method comprises a compression-aware adaption (CAA) network and a bitstream-aware enhancement (BAE). 
+                    The CAA network employs a hierarchical compression adaptation mechanism to estimate parameters 
+                    for the frame-adaptive BAE network, which then aggregates intra-frame information and performs 
+                    region-aware refinement to enhance the input compressed frame.                  
+            </p>
+          </div>
+    
+        </div>
+      </div>
+      <!--/ Animation. -->
+
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Results. -->
+    <div class="columns is-centered ">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered" style="margin-top: -30px">Results</h2>
+          <h3 class="title is-4" style="margin-bottom: 10px">Enhancement Performance</h3>
+          <img src="./assets/HR_018_015_meta.png" class="center">
+          <img src="./assets/HR_030_020_meta.png" class="center">
+          <img src="./assets/HR_090_011_meta.png" class="center">
+
+
+        <h3 class="title is-4" style="margin-top: 20px" style="margin-bottom: 10px">Downstream Tasks</h3>
+        <h3 class="title is-5" style="margin-bottom: 10px">Video Object Segmentation</h3>
+        <video class="center" width="49.6%" style="margin-top: 0px" loop playsinline autoplay muted src="./assets/camel.mp4" onplay="resizeAndPlay(this)" ></video>
+        <video class="center" width="49.6%" style="margin-top: 0px"  loop playsinline autoplay muted src="./assets/drift_chicane.mp4" onplay="resizeAndPlay(this)" ></video>
+        <img src="./assets/vos_stcn_meta.png" class="center">
+        <img src="./assets/vos_deaot_meta.png" class="center">
+        <img src="./assets/vos_qdmn_meta.png" class="center">
+       
+
+        <h3 class="title is-5" style="margin-bottom: 10px">Video Super-Resolution</h3>
+        <img src="./assets/vsr_000_meta.png" class="center">
+        <img src="./assets/vsr_011_meta.png" class="center">
+        <img src="./assets/vsr_020_meta.png" class="center">
+
+        <h3 class="title is-5" style="margin-bottom: 10px">Flow Estimation</h3>
+        <img src="./assets/flow_raft_180_130.png" class="center">
+        <img src="./assets/flow_deq_165.png" class="center">
+        <img src="./assets/flow_raft_180_130.png" class="center">
+     
+      
+ 
+   
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src=""
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> -->
+      <!-- / Paper video. -->
+
+<div class="columns is-centered ">
+<div class="column is-full-width">
+    <h2 class="title is-4" style="margin-top: 30px">BibTeX</h2>
+    <pre><code>@article{PnP-VCVE,
+    author    = {Zeng, Huimin and Li, Jiacheng and Xiong, Zhiwei},
+    title     = {Plug-and-Play Versatile Compressed Video Enhancement},
+    journal   = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year      = {2025},
+}</code></pre>
+  </div>
+</div>
+
+<div class="columns is-centered ">
+    <div class="column is-full-width">
+        <h2 class="title is-4" style="margin-top: 20px" style="margin-bottom: 30px">Acknowledgements</h2>
+        <div class="content has-text-justified">
+            We acknowledge funding from the National Natural Science Foundation of China under Grants 62131003 and 62021001.
+      </div>
+    </div>
+</div>
+
+    
+<!-- <div class="columns is-centered ">
+    <div class="column is-full-width">
+        <h2 class="title is-4" style="margin-top: 20px" style="margin-bottom: 30px">References</h2>
+        <div class="content has-text-justified">
+            <ul>
+              <li>
+                <a href="" target="_blank">xxx</a>
+              </li>
+            </ul>
+          </div>
+    </div>
+</div>
+  -->
+ 
+
+
+  
+<footer class="footer">
+    <div class="container">
+      <!-- <div class="content has-text-centered">
+        <a class="icon-link"
+           href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div> -->
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              Website source code based on the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
